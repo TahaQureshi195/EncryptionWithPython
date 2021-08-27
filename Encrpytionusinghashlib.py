@@ -26,13 +26,6 @@ if n==1:
     print("The hexadecimal equivalent of SHA is : ")
     print(result.hexdigest())
 
-elif n==4:
-    result = hashlib.blake2b(str.encode())
-  
-    # printing the equivalent hexadecimal value.
-    print("The hexadecimal equivalent of BLAKE2B is : ")
-    print(result.hexdigest())
-
   
 elif n==2:
     result = hashlib.sha256(str.encode())
@@ -48,7 +41,14 @@ elif n==3:
     print("The hexadecimal equivalent of SHA512 is : ")
     print(result.hexdigest())
 
-elif n==5:
+elif n==4:
+    result = hashlib.blake2b(str.encode())
+  
+    # printing the equivalent hexadecimal value.
+    print("The hexadecimal equivalent of BLAKE2B is : ")
+    print(result.hexdigest())
+
+else:
     result = hashlib.md5(str.encode())
   
     # printing the equivalent hexadecimal value.
